@@ -3,11 +3,64 @@
     <head>
         <!-- <meta charset="utf-8"> -->
         <title>Geeky15 RIP Cannon</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico&display=swap" rel="stylesheet">
+        <style>
+            .title
+            {
+                font-family: 'Pacifico', cursive;
+                font-size: 75px;
+                color: rgb(38, 41, 49);
+            }
+            body
+            {
+                background-color: #f5f5f5;
+                color: #636168;
+                font-family: 'Open Sans', sans-serif;;
+                text-align: center;
+                font-size: 30px;
+                padding-left: 200px;
+                padding-right: 200px;
+                margin: auto;
+            }
+            .description
+            {
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+            button
+            {
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+                font-size: 50px;
+                border-radius: 20px;
+                display: inline-block;
+                cursor: pointer;
+                padding: 5px;
+                margin-top: 10;
+                transition: all 0.1s;
+            }
+            button:hover 
+            { 
+                padding: 20px;
+                font-size: 80px;
+                background-color: #d4a0ff;
+                color: #ffffff;
+            }
+        </style>
     </head>
     
     <body>
-        <h1>The story of Geeky15</h1>
-        <p>He was at his peak. One of the best in Southeast Asia. But those days are long gone. May you rest in peace Geeky15</p>
-        <img src="Sidra-Peak.png" alt="His peak">
+        <h1 class="title">The story of Geeky15</h1>
+        <p class="description">He was at his peak. One of the best in Southeast Asia. 
+            But those days are long gone. May you rest in peace Geeky15.</p>
+        <button id="onlyButton" onclick="changeToTrash()">What is he now?</button>
+        <script>
+            function changeToTrash() 
+            {
+                document.getElementsByClassName("title")[0].innerHTML = "TRASH";
+                document.getElementsByClassName("description")[0].innerHTML = "tRaSh TrAsH tRaSh TrAsH tRaSh TrAsH tRaSh TrAsH tRaSh TrAsH tRaSh TrAsH tRaSh TrAsH tRaSh TrAsH tRaSh TrAsH tRaSh TrAsH tRaSh TrAsH tRaSh TrAsH tRaSh TrAsH tRaSh TrAsH tRaSh TrAsH ";
+                document.getElementById("onlyButton").innerHTML = "EPIC TRASH GAMER";
+            }
+        </script>
     </body>
 </html>
