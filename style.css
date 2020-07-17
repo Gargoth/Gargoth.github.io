@@ -5,14 +5,14 @@
 }
 
 body {
-    background-color: #ffabc7;
+    background-color: #ffa6c3;
     font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .navbar {
     display: flex;
     flex-direction: row;
-    height: 2em;
+    height: 5vh;
     padding: 1em;
     align-items: center;
     justify-content: space-between;
@@ -37,6 +37,38 @@ body {
 .title:hover, .home-link:hover{
     color: white;
 }
+
+.slime-chan-handler {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 95vh; */
+}
+
+.slime-chan-1 {
+    max-width: 80%;
+    height: auto;
+}
+
+.click-me {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 2em;
+    outline: none;
+    background-color: #ffccdc;
+    border-style: solid;
+    border-color: #ff8cb3;
+    border-radius: 0.3em;
+    color: #bf3fb3;
+    padding: 0.2em;
+}
+
+.click-me:hover {
+    cursor: pointer;
+    filter: saturate(1.5);
+}
+
 /* 
 .member-div-wrapper {
     display: flex;
