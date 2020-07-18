@@ -80,4 +80,6 @@ button:hover {
     height: 70vh;
     margin: 0em 5vw;
     border-radius: 2em;
+    padding: 2em;
+    overflow: scroll;
 }
