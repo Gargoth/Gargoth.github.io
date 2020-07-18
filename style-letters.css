@@ -16,7 +16,7 @@ body {
     padding: 1em;
     align-items: center;
     justify-content: space-between;
-    margin: 0.2em 0em 4em;
+    margin: 0.2em 0em 2em;
 }
 
 .title, .home-link {
@@ -40,22 +40,23 @@ body {
 
 .slime-chan-handler {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    /* height: 95vh; */
+    max-height: 10%;
+    padding: 1em 1.5em;
 }
 
 .slime-chan-1 {
-    max-width: 80%;
-    height: auto;
+    max-height: 10vh;
+    width: auto;
 }
 
-.click-me {
+button {
     text-decoration: none;
     font-family: 'Roboto Mono', monospace;
     font-weight: 500;
-    font-size: 2em;
+    font-size: 1em;
     outline: none;
     background-color: #ffccdc;
     border-style: solid;
@@ -65,7 +66,18 @@ body {
     padding: 0.2em;
 }
 
-.click-me:hover {
+button:hover {
     cursor: pointer;
     filter: saturate(1.5);
+}
+
+.placeholder {
+    flex-grow: 1;
+}
+
+.letter-handler {
+    background-color: #ffffff;
+    height: 70vh;
+    margin: 0em 5vw;
+    border-radius: 2em;
 }
