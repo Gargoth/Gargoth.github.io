@@ -43,3 +43,13 @@ var currentLetter = 0;
 console.log("vars loaded")
 
 updateLetter();
+
+//// In Drive:
+// Joaquin
+// Andie
+// Sam
+
+//// In DMs
+// Yanna
+// Lei
+// Dani
