@@ -45,11 +45,15 @@ console.log("vars loaded")
 updateLetter();
 
 //// In Drive:
-// Joaquin
 // Andie
+// Cyrus
+// Harvey
+// Joaquin
+// Justin
 // Sam
 
 //// In DMs
 // Yanna
 // Lei
 // Dani
+// Jose
