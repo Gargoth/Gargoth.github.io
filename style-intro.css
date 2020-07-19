@@ -64,6 +64,12 @@ button {
     border-radius: 0.3em;
     color: #bf3fb3;
     padding: 0.2em;
+
+    /* make text unselectable */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 button:hover {
@@ -128,6 +134,12 @@ button:hover {
 a {
     text-decoration: none;
     color: #bf3fb3;
+    
+    /* make text unselectable */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
