@@ -1,4 +1,4 @@
-var messages = ['1', '2', '3', 'last message']
+var messages = ['Awww...', '*sniffles*', 'W-what??', "SLIME-CHAN TOTALLY WASN'T CRYING", 'N-no YOU WERE CRYING!!', '*sniffles*', '...', 'OH!!', 'How could I forget!!', "There's just one last thing your friends wanted me to give you.", "Slime-chan just knows you'll love it!", '*giggles*', 'Are you ready?', 'A-are we ever really ready??', 'WHO KNOWS!!', 'BUT HERE GOES!!', 'HEEEEEERE!!', 'GOEEEEEES!!',]
 
 function newMessage() {
     if (i < messages.length) {
