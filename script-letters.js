@@ -7,7 +7,7 @@ function next() {
     if (currentLetter >= letters.length) {
         currentLetter = 0
     }
-    document.getElementById('idpic').setAttribute("src", "./pics/pic" + currentLetter +".jpg");
+    pic.setAttribute("src", "./pics/pic" + currentLetter +".jpg");
     updateLetter();
     updateButtons();
 }
@@ -17,13 +17,9 @@ function back() {
     if (currentLetter < 0) {
         currentLetter = letters.length - 1;
     }
-    document.getElementById('idpic').setAttribute("src", "./pics/pic" + currentLetter +".jpg");
+    pic.setAttribute("src", "./pics/pic" + currentLetter +".jpg");
     updateLetter();
     updateButtons();
-}
-
-function nextToProceed() {
-    nextButton.innerHTML = "testes";
 }
 
 function updateButtons() {
@@ -62,6 +58,7 @@ console.log("letters loaded");
 var letterHandler = document.getElementsByClassName("letter-handler")[0];
 var backButton = document.getElementsByClassName("back-button")[0];
 var nextButton = document.getElementsByClassName("next-button")[0];
+var pic = document.getElementsByClassName("idPicture")[0];
 var currentLetter = 0;
 
 console.log("vars loaded")

@@ -47,9 +47,25 @@ body {
     padding: 1em 1.5em;
 }
 
-.slime-chan-1 {
+.overlay-handler {
+    display: flex;
+    justify-content: center;
+
+    background-image: url("slime-chan-bounce.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10vh;
+    width: 14vh;
+}
+
+/* .slime-chan-1 {
     max-height: 10vh;
     width: auto;
+} */
+
+.idPicture {
+    width: 3em;
+    height: 3em;
 }
 
 button {
@@ -100,13 +116,13 @@ button:hover {
     display: none;
 }
 
-#idpic{
+/* #idpic{
     width: 120px;
     height: 120px;
     position: absolute;
     bottom: 21vw;
     left: 7.5vw;
-}  
+} */
 
 a {
     text-decoration: none;
