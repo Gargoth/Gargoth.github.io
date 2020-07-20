@@ -9,6 +9,7 @@ function next() {
     }
     document.getElementById('idpic').setAttribute("src", "./pics/pic" + currentLetter +".jpg");
     updateLetter();
+    updateButtons();
 }
 
 function back() {
@@ -18,6 +19,23 @@ function back() {
     }
     document.getElementById('idpic').setAttribute("src", "./pics/pic" + currentLetter +".jpg");
     updateLetter();
+    updateButtons();
+}
+
+function nextToProceed() {
+    nextButton.innerHTML = "testes";
+}
+
+function updateButtons() {
+    if (currentLetter == 0) {
+        backButton.style.display = "none";
+    } else if (currentLetter == letters.length - 1) {
+        console.log("last item");
+        nextButton.innerHTML = '<a href="./closing.html">Continue</a>'
+    } else {
+        backButton.style.display = "inline-block";
+        nextButton.innerHTML = "Next";
+    }
 }
 
 console.log("functions loaded");
@@ -42,8 +60,13 @@ var images = [] // src for small pics
 console.log("letters loaded");
 
 var letterHandler = document.getElementsByClassName("letter-handler")[0];
+var backButton = document.getElementsByClassName("back-button")[0];
+var nextButton = document.getElementsByClassName("next-button")[0];
 var currentLetter = 0;
 
 console.log("vars loaded")
 
 updateLetter();
+updateButtons();
+
+console.log("elements updated");
