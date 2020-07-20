@@ -40,9 +40,12 @@ body {
 
 .slime-chan-handler {
     display: flex;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    top: 30vh;
+    left: 28vw;
     /* height: 95vh; */
 }
 

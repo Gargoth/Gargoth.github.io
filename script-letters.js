@@ -7,6 +7,7 @@ function next() {
     if (currentLetter >= letters.text.length) {
         currentLetter = 0
     }
+    document.getElementById('idpic').setAttribute("src", "pic" + currentLetter +".JPG");
     updateLetter();
 }
 
@@ -15,6 +16,7 @@ function back() {
     if (currentLetter < 0) {
         currentLetter = letters.text.length - 1;
     }
+    document.getElementById('idpic').setAttribute("src", "pic" + currentLetter + ".JPG");
     updateLetter();
 }
 
@@ -41,6 +43,7 @@ var letterHandler = document.getElementsByClassName("letter-handler")[0];
 var currentLetter = 0;
 
 console.log("vars loaded")
+
 
 updateLetter();
 

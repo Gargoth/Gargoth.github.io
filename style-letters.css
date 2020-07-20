@@ -50,6 +50,7 @@ body {
 .slime-chan-1 {
     max-height: 10vh;
     width: auto;
+    position: relative;
 }
 
 button {
@@ -93,3 +94,12 @@ button:hover {
 .letter-handler::-webkit-scrollbar {
     display: none;
 }
+
+
+#idpic{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom: 21vw;
+    left: 7.5vw;
+}  
