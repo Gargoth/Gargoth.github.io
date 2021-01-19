@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet"> 
+    <title>Home Screen - LMSaviour</title>
+
+    <script>
+        function sidebar_click() {
+            var sidebar = document.getElementsByClassName("sidebar")[0];
+            if (sidebar.style.display == "flex") {
+                sidebar_close();
+            }
+            else
+            {
+                sidebar_open();
+            }
+        }
+
+        function sidebar_open() {
+            document.getElementsByClassName("sidebar")[0].style.display = "flex";
+        }
+
+        function sidebar_close() {
+            document.getElementsByClassName("sidebar")[0].style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <header class="statusbar"></header>
+    <div class="page-container">
+        <div class="sidebar">
+            <div class="titlebar heavy-color">
+                <button class="btn sidebar-btn heavy-color" onclick="sidebar_click()"><img src="https://img.icons8.com/android/48/000000/left.png"/></button>
+                <h1 class="home-screen">Menu</h1>
+            </div>
+            <a href="calendar.html" class="btn spaced-item">Calendar</a>
+            <a href="schedule.html" class="btn spaced-item">Schedule</a>
+            <a href="manage-lms.html" class="btn spaced-item">Manage / Add LMS</a>
+            <a href="offline-modules.html" class="btn spaced-item">Offline Modules</a>
+            <a href="" class="btn spaced-item tba light-color">TBA</a>
+        </div>
+        <div class="titlebar">
+            <button class="btn sidebar-btn" onclick="sidebar_click()"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 172 172" style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="M0,172v-172h172v172z" fill="#1976d2"></path><g id="original-icon" fill="#ffffff"><path d="M30.71429,47.3v11.05714h110.57143v-11.05714zM30.71429,80.47143v11.05714h110.57143v-11.05714zM30.71429,113.64286v11.05714h110.57143v-11.05714z"></path></g><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="none"></path><path d="M86,168.56c-45.59663,0 -82.56,-36.96337 -82.56,-82.56v0c0,-45.59663 36.96337,-82.56 82.56,-82.56v0c45.59663,0 82.56,36.96337 82.56,82.56v0c0,45.59663 -36.96337,82.56 -82.56,82.56z" fill="none"></path></g></g></svg></button>
+            <h1 class="home-screen">Home Screen</h1>
+            <a href="messages.html" class="btn sidebar-btn"><img src="https://img.icons8.com/windows/64/000000/chat-messages--v1.png"/></a>
+            <a href="notifications.html" class="btn sidebar-btn"><img src="https://img.icons8.com/ios-filled/100/000000/appointment-reminders.png"/></a>
+        </div>
+        <div class="titlebar freq-pick">
+            <span class="btn light-color">Daily</span>
+            <span class="btn">Weekly</span>
+            <span class="btn">Monthly</span>
+        </div>
+        <div class="lms-list card-container">
+            <div class="card">
+                <p>CS 10 - Zoom Meeting (2:30pm - 4:00pm)<br>Link: --------------------------------<br>Meeting ID: 1234567890<br>Password: !@#^jklasdf!@#</p>
+                <div class="image"><img src="https://img.icons8.com/fluent/48/000000/zoom.png"/></div>
+            </div>
+            <div class="card">
+                <p>[Assignment] Problem Solving in a Computer<br>Link: --------------------------------<br>Deadline: January 20, 2021 (11:59pm)</p>
+                <div class="image"><img src="https://img.icons8.com/color/48/000000/canvas-student.png"/></div>
+            </div>
+            <div class="card">
+                <p>[Readings] Philosophy 1 - Kant's Synthetic a priori<br>Link: ---------------------------------<br><span class="normal-color attachment">Philo 1.pdf</span></p>
+                <div class="image"><img src="https://img.icons8.com/color/48/000000/google-classroom.png"/></div>
+            </div>
+            <div class="card">
+                <p>CS 11 - Zoom Meeting (6:00pm - 7:00pm)<br>Link: -------------------------------<br>Meeting ID: 9876543210<br>Password: 78#$%n@</p>
+                <div class="image"><img src="https://img.icons8.com/fluent/48/000000/zoom.png"/></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
